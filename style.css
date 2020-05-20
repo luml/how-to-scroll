@@ -2,7 +2,7 @@
     html,
     body {
         scroll-behavior: smooth;
-        background: linear-gradient(0.25turn, skyblue, lightblue);
+        background: linear-gradient(0.25turn, lightblue, white, lightblue);
     }
 }
 
@@ -30,8 +30,6 @@
     background-color: lightblue;
 }
 
-/* $scrollLength: 100vh; */
-
 .back-to-top-wrapper {
     position: absolute;
     top: 100vh;
@@ -47,26 +45,30 @@ main {
     max-width: 50rem;
     margin: 2rem auto;
 }
-
 main:last-child {
     margin-bottom: 0;
 }
 
 body {
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 2fr auto;
+}
+header, footer {
+    display: grid;
+    place-items: center;
+    margin: -1rem;
 }
 header {
     font-size: 3rem;
     color: beige;
-    margin: -1rem;
-    display: grid;
-    place-items: center;
     background-image: url(./eberhard-grossgasteiger-er8Bjy-33v4-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+footer {
+    margin-top: 4rem;
+    color: black;
+}
 
 /* https://moderncss.dev/pure-css-smooth-scroll-back-to-top/ */
