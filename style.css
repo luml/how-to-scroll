@@ -24,6 +24,7 @@
 }
 .back-to-top-link:hover {
     background-color: #fff;
+    transform: scale(1.1);
 }
 .back-to-top-link:focus {
     background-color: lightblue;
@@ -35,7 +36,7 @@
     position: absolute;
     top: 100vh;
     right: 0.25rem;
-    /* bottom: -5em; */
+    bottom: -5em;
     width: 3em;
     pointer-events: none;
 }
@@ -49,6 +50,22 @@ main {
 
 main:last-child {
     margin-bottom: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+header {
+    font-size: 3rem;
+    color: beige;
+    margin: -1rem;
+    display: grid;
+    place-items: center;
+    background-image: url(./eberhard-grossgasteiger-er8Bjy-33v4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
