@@ -59,7 +59,7 @@ header, footer {
     margin: -1rem;
 }
 header {
-    font-size: 3rem;
+    font-size: clamp(3rem, 10vw, 5rem);
     color: beige;
     background-image: url(./eberhard-grossgasteiger-er8Bjy-33v4-unsplash.jpg);
     background-position: center;
